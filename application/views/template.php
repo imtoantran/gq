@@ -6,38 +6,13 @@
     <meta name="description" content="<?php echo $this->template->description; ?>">
     <meta name="author" content="">
     <?php echo $this->template->meta; ?>
+    <link href="<?php print asset_url('css'); ?>/style.css" media="screen" rel="stylesheet" type="text/css" />
     <?php echo $this->template->stylesheet; ?>
 </head>
 <body>
-
-<?php 
-    // This is an example to show that you can load stuff from inside the template file
-    echo $this->template->widget("navigation", array('title' => 'Project name'));
-?>
-
-<div class="container" style="margin-top: 60px;">
-
-  <?php
-    // This is the main content partial
-    echo $this->template->content;
-  ?>
-
-  <hr>
-
-  <footer>
-    <p>
-        <?php 
-            // Show the footer partial, and prepend copyright message
-            echo $this->template->footer->prepend("&copy; Special Company 2012 - ");
-        ?>
-    </p>
-  </footer>
-
-</div>
-
-<script src="//code.jquery.com/jquery-latest.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+<?php echo $this->template->header; ?>
+<?php echo $this->template->content; ?>
+<?php echo $this->template->footer; ?>
 <?php echo $this->template->javascript; ?>
-
 </body>
 </html>
