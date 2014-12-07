@@ -7,45 +7,49 @@ if(substr($_POST['control'],0,3)=='del'){
 	$value_id=$del[1];
 	$sql = "DELETE FROM `pk` WHERE  `id` = '$value_id'";
 	$result = mysql_query($sql, $connection);
-	unlink("../images/product/other/".$value_id."_1.jpg");
-	unlink("../images/product/other/thumb_".$value_id."_1.jpg");
-	unlink("../images/product/other/".$value_id."_2.jpg");
-	unlink("../images/product/other/thumb_".$value_id."_2.jpg");
-	unlink("../images/product/other/".$value_id."_3.jpg");
-	unlink("../images/product/other/thumb_".$value_id."_3.jpg");
-	unlink("../images/product/other/".$value_id."_4.jpg");
-	unlink("../images/product/other/thumb_".$value_id."_4.jpg");
-	unlink("../images/product/other/".$value_id."_5.jpg");
-	unlink("../images/product/other/thumb_".$value_id."_5.jpg");
-	
+        /**
+         * imtoantran 
+         * delete image
+         */
+        for ($i=1;$i<6;$i++){
+            $filename = "../images/product/other/".$value_id."_".$i.".jpg";
+            if(file_exists($filename)){
+                unlink($filename);
+            }
+            $filename = "../images/product/other/thumb_".$value_id."_".$i.".jpg";
+            if(file_exists($filename)){
+                unlink($filename);
+            }
+        }	
 
-
-	$id_old=$value_id;
-	$sql = "SELECT * FROM  `pk` WHERE `id` > '$id_old' ORDER BY  `id` ASC";
+	$id_new=$value_id;
+	$sql = "SELECT max(id) FROM  `pk`";
 	$result = mysql_query($sql, $connection);
-	while ($row = mysql_fetch_array($result)){
-		$id_new=$row['id'];
-		$query = "update `pk`
-							set id = '%s'
-							where id = '%s'
-						 ";
-		$query = sprintf($query
-							,mysql_real_escape_string($id_old)
-							,mysql_real_escape_string($id_new)
-						);
+        $id_old = mysql_fetch_row($result)[0];
+	if($id_old > $id_new){
+		$query = "update `pk` set id = '%s' where id = '%s'";
+		$query = sprintf($query,
+                        mysql_real_escape_string($id_new),
+                        mysql_real_escape_string($id_old)
+                        );
 		mysql_query($query);
-		rename("../images/product/other/".$id_new."_1.jpg", "../images/product/other/".$id_old."_1.jpg");
-		rename("../images/product/other/thumb_".$id_new."_1.jpg", "../images/product/other/thumb_".$id_old."_1.jpg");
-		rename("../images/product/other/".$id_new."_2.jpg", "../images/product/other/".$id_old."_2.jpg");
-		rename("../images/product/other/thumb_".$id_new."_2.jpg", "../images/product/other/thumb_".$id_old."_2.jpg");
-		rename("../images/product/other/".$id_new."_3.jpg", "../images/product/other/".$id_old."_3.jpg");
-		rename("../images/product/other/thumb_".$id_new."_3.jpg", "../images/product/other/thumb_".$id_old."_3.jpg");
-		rename("../images/product/other/".$id_new."_4.jpg", "../images/product/other/".$id_old."_4.jpg");
-		rename("../images/product/other/thumb_".$id_new."_4.jpg", "../images/product/other/thumb_".$id_old."_4.jpg");
-		rename("../images/product/other/".$id_new."_5.jpg", "../images/product/other/".$id_old."_5.jpg");
-		rename("../images/product/other/thumb_".$id_new."_5.jpg", "../images/product/other/thumb_".$id_old."_5.jpg");
-
-		$id_old++;
+        /**
+         * imtoantran 
+         * delete image
+         */
+        for ($i=1;$i<6;$i++){
+            $filename = "../images/product/other/".$id_old."_".$i.".jpg";
+            $new_name = "../images/product/other/".$id_new."_".$i.".jpg";
+            if(file_exists($filename)){
+                rename($filename,$new_name);
+            }
+            $filename = "../images/product/other/thumb_".$id_old."_".$i.".jpg";
+            $new_name = "../images/product/other/thumb_".$id_new."_".$i.".jpg";
+            if(file_exists($filename)){
+                rename($filename,$new_name);
+            }
+        }
+	$id_old++;
 	}
 	"<script>window.location='quanlypk.php';</script>";
 }
