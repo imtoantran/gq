@@ -389,9 +389,10 @@ header{
 }
 
 .shoes div{
-
 	float:left;
-
+	width:206px;
+	margin-left:4px;
+	overflow: hidden; 
 }
 .shoes div a{
 	display: block;
@@ -493,7 +494,7 @@ header{
 
 	line-height:1.5;
 
-	margin-left:5px;
+	margin-left:12px;
 
 }
 
@@ -909,4 +910,19 @@ footer{
 }
 #navigation ul li:last-child a{
 	border-right: none;
+}
+.product-price{
+	display: block;
+	text-align: center;
+	border-top: 2px solid #222;
+	border-bottom: 2px solid #222;
+	padding: 4px 0;
+	margin: 2px 0;
+}
+nav#danhmuc-phukien li{
+	list-style: disc;
+
+}
+nav#danhmuc-phukien li.active a{
+	color: red;
 }
