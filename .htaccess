@@ -1,0 +1,16 @@
+# -FrontPage-
+
+
+<Limit GET POST>
+order deny,allow
+deny from all
+allow from all
+</Limit>
+<Limit PUT DELETE>
+order deny,allow
+deny from all
+</Limit>
+AuthUserFile /home/gia467fb/public_html/_vti_pvt/service.pwd
+AuthGroupFile /home/gia467fb/public_html/_vti_pvt/service.grp
+AuthName giayquoc.vn
+IndexIgnore .htaccess */.??* *~ *# */HEADER* */README* */_vti*

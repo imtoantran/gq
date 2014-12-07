@@ -1,0 +1,54 @@
+@charset "utf-8";
+/* CSS Document */
+.control_admin{
+	float:left; position:relative; background:#e34929; height:33px; width:114px; color:#fff; margin-left:5px; padding-top:8px; text-align:center;
+}
+.style_hover:hover{
+	background:rgba(248,200,6,0.8) !important;
+	color:#000;
+	cursor:pointer;
+}
+.style_hover:active{
+	background:rgba(144,255,0,0.8) !important;
+	color:#000;
+}
+.quanlytintuc_edit{
+	float:left; background:#e34929; height:33px; width:55px; color:#fff; padding:8px 0 0 0px; text-align:center;
+}
+.menu{
+	float:left; background:#e34929; height:33px; width:114px; color:#fff; margin-left:5px; padding-top:8px; text-align:center; position:relative
+}
+.colum{
+	float:left;
+	height:33px;
+	width:138px;
+	margin-right:12px;
+	background:#e34929;
+	text-align:center;
+	color:#fff;
+	padding-top:10px;
+}.colum2{
+	float:left;
+	height:33px;
+	width:138px;
+	margin-right:12px;
+	background:#fff;
+	color:#000;
+	height:140px;
+	padding:15px 5px 0 5px;
+	font-size:10px;
+}
+.colum2 img{
+	height:80px;
+	width:80px;
+}
+.box_color{
+	float:left;
+	margin:4px 0 0 3px;
+	padding:1px;
+	width:16px;height:16px;
+}
+.box_color div{
+	height:16px;
+	width:16px;
+}
