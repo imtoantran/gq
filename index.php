@@ -47,18 +47,18 @@
                 </a>
             </div>
             <div>
-                <a href="chitiet.php?item=sp-<?php echo $data_shoes[1]['id'] ?>">
-                    <img onerror="this.src='images/icon/error.jpg'" src="images/product/shoes/<?php echo $data_shoes[1]['id']?>_1.jpg" alt="" />
+                <a href="chitiet.php?item=sp-<?php echo $data_shoes[2]['id'] ?>">
+                    <img onerror="this.src='images/icon/error.jpg'" src="images/product/shoes/<?php echo $data_shoes[2]['id']?>_1.jpg" alt="" />
                 </a>
             </div>
             <div>
-                <a href="chitiet.php?item=sp-<?php echo $data_shoes[1]['id'] ?>">
-                    <img onerror="this.src='images/icon/error.jpg'" src="images/product/shoes/<?php echo $data_shoes[1]['id']?>_1.jpg" alt="" />
+                <a href="chitiet.php?item=sp-<?php echo $data_shoes[3]['id'] ?>">
+                    <img onerror="this.src='images/icon/error.jpg'" src="images/product/shoes/<?php echo $data_shoes[3]['id']?>_1.jpg" alt="" />
                 </a>
             </div>
             <div>
-                <a href="chitiet.php?item=sp-<?php echo $data_shoes[1]['id'] ?>">
-                    <img onerror="this.src='images/icon/error.jpg'" src="images/product/shoes/<?php echo $data_shoes[1]['id']?>_1.jpg" alt="" />
+                <a href="chitiet.php?item=sp-<?php echo $data_shoes[4]['id'] ?>">
+                    <img onerror="this.src='images/icon/error.jpg'" src="images/product/shoes/<?php echo $data_shoes[4]['id']?>_1.jpg" alt="" />
                 </a>
             </div>
             <div>
@@ -67,13 +67,13 @@
                 </a>
             </div>
             <div>
-                <a href="chitiet.php?item=sp-<?php echo $data_shoes[1]['id'] ?>">
-                    <img onerror="this.src='images/icon/error.jpg'" src="images/product/shoes/<?php echo $data_shoes[1]['id']?>_1.jpg" alt="" />
+                <a href="chitiet.php?item=sp-<?php echo $data_shoes[5]['id'] ?>">
+                    <img onerror="this.src='images/icon/error.jpg'" src="images/product/shoes/<?php echo $data_shoes[5]['id']?>_1.jpg" alt="" />
                 </a>
             </div>
             <div>
-                <a href="chitiet.php?item=sp-<?php echo $data_shoes[1]['id'] ?>">
-                    <img onerror="this.src='images/icon/error.jpg'" src="images/product/shoes/<?php echo $data_shoes[1]['id']?>_1.jpg" alt="" />
+                <a href="chitiet.php?item=sp-<?php echo $data_shoes[6]['id'] ?>">
+                    <img onerror="this.src='images/icon/error.jpg'" src="images/product/shoes/<?php echo $data_shoes[6]['id']?>_1.jpg" alt="" />
                 </a>
             </div>
     	</div>

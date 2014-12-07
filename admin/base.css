@@ -1,188 +1,1 @@
-@charset "utf-8";
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt,
-var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
-        margin: 0;
-        padding: 0;
-        border: 0;
-        font-size: 100 % ;
-        font: inherit;
-        vertical-align: baseline
-    }
-@font-face {
-    font-family: 'trebuchet_msregular';
-    src: url('../webfonts/trebuc-webfont.eot');
-    src: url('../webfonts/trebuc-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../webfonts/trebuc-webfont.woff') format('woff'),
-         url('../webfonts/trebuc-webfont.ttf') format('truetype'),
-         url('../webfonts/trebuc-webfont.svg#trebuchet_msregular') format('svg');
-}
-body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, p, blockquote, th, td {
-	margin: 0;
-	padding: 0;
-	text-align: left;
-	font: normal 12px Arial;
-	list-style: none;
-}
-body {
-   
-}
-section, header, footer{
-	width:960px;
-	margin:0 auto;
-}
-table {
-    border-collapse: collapse;
-    border-spacing: 0
-}
-caption, th, td {
-    text-align: left;
-    font-weight: normal;
-    vertical-align: middle
-}
-address, caption, cite, code, dfn, em, strong, th,
-var {
-    font-style: normal;
-    font-weight: normal;
-}
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-fieldset,a img, img {
-    border: 0;
-}
-caption, th {
-    text-align: left;
-}
-q: before,
-q: after {
-    content: '';
-}.clr {
-    clear: both;
-}
-a: link,
-a: visited,
-a: hover,
-a: active {
-	text-decoration: none;
-	color: inherit;
-}
-
-caption, th, td {
-    text-align: left;
-    font-weight: normal;
-    vertical-align: middle
-}
-q, blockquote {
-    quotes: none
-}
-q: before,
-q: after,
-blockquote: before,
-blockquote: after {
-    content: "";
-    content: none
-}
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-    display: block
-}
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section{
-    display: block
-} * {
-    -moz-box-sizing: border-box;-webkit-box-sizing: border-box;-ms-box-sizing: border-box;
-    box-sizing: border-box;
-}
-/* CSS Document */
-body{ 
-	line-height: 1;
-	background:rgba(213,213,213,0.25);
-
-}
-
-.hover{
-	background-color: #FB4A51;
-	cursor:pointer;
-}
-
-.hover:hover{
-	background-color: #a2fb2f;
-	
-}
-.menu_div{
-	width:140px;
-	height:80px;
-	float:left;
-	color:#000;
-	font-size:15px;
-
-}
-.menu_div p{
-	font-size:14px
-}
-.menu_div a{
-	text-decoration:none;
-	color:inherit;
-}
-#mn_bao_bi_down{
-	background:#FFF;
-	padding:10px 0 15px 20px;
-	height:auto;
-}
-#mn_bao_bi_down p{
-	padding: 2px 0;
-	font-size:11px;
-	cursor:pointer;
-}
-#mn_bao_bi_down p:hover{
-	color:#ef545a
-}
-.choice_menu{
-	width:10px; 
-	height:10px; 
-	background:#000; 
-	position:absolute; 
-	margin:4px 0 0 -20px; 
-	display:none;
-}
-.text_chitiet p{ color:#000;
-line-height:1.7;
-font-size:12px;
-}
-.ptieude_incatologue{font-size:14px; padding:8px 0 0 10px; font-family:trebuchet_msregular
-}
-.p_incatologue{
-	font-size:11px; line-height:1.5; margin:3px 0 0 30px; padding:3px 0 2px 8px; background:url(images/ico-menu/boder_3.png) left no-repeat
-}
-.p_incatologue1{width: 230px;height: 350px;background-color: #ef545a; float:left; color:#fff}
-
-.p_incatologue2{width: 480px;height: 340px;background-color: #ef545a; float:left;}
-.div_incatologue2{position:absolute; background:rgba(0,0,0,0.6); height:90px; width:239px; color:#fff;
-}
-.p_incatologue3{position:absolute; background:rgba(0,0,0,0.6); height:54px; font-size:11px; padding:5px 5px 0 5px; min-width:170px; color:#fff;
-}
-.div_incatologue4{position:absolute; background:rgba(0,0,0,0.6); height:35.5px; width:230px; color:#fff}
-.p_incatologue4{font-size:14px; float:left; font-family:trebuchet_msregular}
-.p_incatologue5{width: 30px; margin:12px 0 0 1px;height: 11px;background-color: #fefefe; float:left}
-.page{background:#90D201;height:19px;width:19px;text-align:center;padding:2px 1px 0 0;float:right;margin:0 4px;cursor:pointer;color:#fff}
-.page:hover{background:#EF545A; color:#fff;}
-.page2{width:20px;text-align:center;padding-top:8px;float:right;margin:0 4px;cursor:pointer;}
+@charset "utf-8";html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt,var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {        margin: 0;        padding: 0;        border: 0;        font-size: 100% ;        font: inherit;        vertical-align: baseline    }@font-face {    font-family: 'trebuchet_msregular';    src: url('../webfonts/trebuc-webfont.eot');    src: url('../webfonts/trebuc-webfont.eot?#iefix') format('embedded-opentype'),         url('../webfonts/trebuc-webfont.woff') format('woff'),         url('../webfonts/trebuc-webfont.ttf') format('truetype'),         url('../webfonts/trebuc-webfont.svg#trebuchet_msregular') format('svg');}body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, p, blockquote, th, td {	margin: 0;	padding: 0;	text-align: left;	font: normal 12px Arial;	list-style: none;}body {   }section, header, footer{	width:960px;	margin:0 auto;}table {    border-collapse: collapse;    border-spacing: 0}caption, th, td {    text-align: left;    font-weight: normal;    vertical-align: middle}address, caption, cite, code, dfn, em, strong, th,var {    font-style: normal;    font-weight: normal;}table {    border-collapse: collapse;    border-spacing: 0;}fieldset,a img, img {    border: 0;}caption, th {    text-align: left;}q:before,q:after {    content: '';}.clr {    clear: both;}a:link,a:visited,a:hover,a:active {	text-decoration: none;	color: inherit;}caption, th, td {    text-align: left;    font-weight: normal;    vertical-align: middle}q, blockquote {    quotes: none}q:before,q:after,blockquote:before,blockquote:after {    content: "";    content: none}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {    display: block}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{    display: block} * {    -moz-box-sizing: border-box;-webkit-box-sizing: border-box;-ms-box-sizing: border-box;    box-sizing: border-box;}/* CSS Document */body{ 	line-height: 1;	background:rgba(213,213,213,0.25);}.hover{	background-color: #FB4A51;	cursor:pointer;}.hover:hover{	background-color: #a2fb2f;	}.menu_div{	width:140px;	height:80px;	float:left;	color:#000;	font-size:15px;}.menu_div p{	font-size:14px}.menu_div a{	text-decoration:none;	color:inherit;}#mn_bao_bi_down{	background:#FFF;	padding:10px 0 15px 20px;	height:auto;}#mn_bao_bi_down p{	padding: 2px 0;	font-size:11px;	cursor:pointer;}#mn_bao_bi_down p:hover{	color:#ef545a}.choice_menu{	width:10px; 	height:10px; 	background:#000; 	position:absolute; 	margin:4px 0 0 -20px; 	display:none;}.text_chitiet p{ color:#000;line-height:1.7;font-size:12px;}.ptieude_incatologue{font-size:14px; padding:8px 0 0 10px; font-family:trebuchet_msregular}.p_incatologue{	font-size:11px; line-height:1.5; margin:3px 0 0 30px; padding:3px 0 2px 8px; background:url(images/ico-menu/boder_3.png) left no-repeat}.p_incatologue1{width: 230px;height: 350px;background-color: #ef545a; float:left; color:#fff}.p_incatologue2{width: 480px;height: 340px;background-color: #ef545a; float:left;}.div_incatologue2{position:absolute; background:rgba(0,0,0,0.6); height:90px; width:239px; color:#fff;}.p_incatologue3{position:absolute; background:rgba(0,0,0,0.6); height:54px; font-size:11px; padding:5px 5px 0 5px; min-width:170px; color:#fff;}.div_incatologue4{position:absolute; background:rgba(0,0,0,0.6); height:35.5px; width:230px; color:#fff}.p_incatologue4{font-size:14px; float:left; font-family:trebuchet_msregular}.p_incatologue5{width: 30px; margin:12px 0 0 1px;height: 11px;background-color: #fefefe; float:left}.page{background:#90D201;height:19px;width:19px;text-align:center;padding:2px 1px 0 0;float:right;margin:0 4px;cursor:pointer;color:#fff}.page:hover{background:#EF545A; color:#fff;}.page2{width:20px;text-align:center;padding-top:8px;float:right;margin:0 4px;cursor:pointer;}

@@ -27,7 +27,7 @@
 		if(mysql_num_rows($result)){
 
 			session_start();
-			session_register("user_id", "user_password");  
+			//session_register("user_id", "user_password");  
 			$_SESSION['user_id'] = $user;   
 			$_SESSION['user_password'] = $pass;
 			?><script> window.location = "index.php";</script><?php 
